@@ -1,19 +1,123 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
-
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>FS</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  </head>
-  <body>
+</head>
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
-
+<body>
+    <header>
+        <div class="row">
+            <div class="container clearfix">
+                <div class="mob-menu triggur hide-for-large">
+                    <img src="{{root}}assets/img/menu.svg" />
+                </div>
+                <div id="logo">
+                    <img src="{{root}}assets/img/logo.svg" />
+                </div>
+                <!-- desktop nav -->
+                <nav class="desktop show-for-large">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a>Industry Solutions</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 1A Loooong</a></li>
+                                <li>
+                                    <a href='#'> Item 1 sub</a>
+                                    <ul class='menu'>
+                                        <li><a href='#'>Item 1 subA</a></li>
+                                        <li><a href='#'>Item 1 subB</a></li>
+                                        <li>
+                                            <a href='#'> Item 1 sub</a>
+                                            <ul class='menu'>
+                                                <li><a href='#'>Item 1 subA</a></li>
+                                                <li><a href='#'>Item 1 subB</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href='#'> Item 1 sub</a>
+                                            <ul class='menu'>
+                                                <li><a href='#'>Item 1 subA</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Item 1B</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 2A</a></li>
+                                <li><a href="#">Item 2B</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 2A</a></li>
+                                <li><a href="#">Item 2B</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">More</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 2A</a></li>
+                                <li><a href="#">Item 2B</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /desktop nav -->
+                <div class="fl-right">
+                    <div id="buy-contact" class="show-for-large"><a href="">Buy/Contact</a></div>
+                    <div id="search" data-toggle="callout">
+                        <img src="{{root}}assets/img/search.svg" />
+                    </div>
+                </div>
+            </div>
+            <!-- mobile nav -->
+            <nav class="mobile">
+                <ul class="vertical menu" data-accordion-menu>
+                    <li>
+                        <a href="#">Item 1</a>
+                        <ul class="menu vertical nested">
+                            <li><a href="#">Item 1A</a></li>
+                            <li><a href="#">Item 1B</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Item 2</a></li>
+                </ul>
+            </nav>
+            <!-- /mobile nav -->
+        </div>
+        <div class="callout" style="display: none" id="callout" data-toggler data-animate="hinge-in-from-top hinge-out-from-top">
+            <div class="input-group">
+                <input class="input-group-field search-home" type="number">
+                <div class="input-group-button">
+                    <input type="submit" class="button no-shad" value="Submit">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}}
     <script src="{{root}}assets/js/app.js"></script>
-  </body>
+    <script src="{{root}}assets/js/classie.js"></script>
+    <script src="{{root}}assets/js/custom.js"></script>
+    <script>
+    $(".triggur").click(function() {
+        $("nav").slideToggle("slow");
+    });
+    </script>
+</body>
+
 </html>
