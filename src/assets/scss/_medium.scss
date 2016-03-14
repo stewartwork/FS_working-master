@@ -1,144 +1,54 @@
 @media (min-width:640px) and (max-width:1023px) {
-   
+
 /* =Header
 -------------------------------------------------------------- */
 
 header {
     width: 100%;
     height: 80px;
-    //overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: $flowred;
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    -ms-transition: height 0.3s;
-    -o-transition: height 0.3s;
-    transition: height 0.3s;
     #logo {
-        display: inline-block;
         height: 80px;
         line-height: 80px;
-        float: left;
-        -webkit-transition: $global_tran;
-        -moz-transition: $global_tran;
-        -ms-transition: $global_tran;
-        -o-transition: $global_tran;
-        transition: $global_tran;
         img {
-            width: 123px;
+            width: 150px;
             height: 80px;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
-            transition: $global_tran;
         }
     }
     .mob-menu {
-        float: left;
-        display: inline-block;
         height: 80px;
         width: 80px;
         line-height: 80px;
-        background: darken(#ff0000, 20%);
-        text-align: center;
-        -webkit-transition: $global_tran;
-        -moz-transition: $global_tran;
-        -ms-transition: $global_tran;
-        -o-transition: $global_tran;
-        transition: $global_tran;
         img {
             width: 30px;
             height: 30px;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
-            transition: $global_tran;
-            &:hover {
-                //opacity(0.5);
-            }
-        }
-        &:hover {
-            background: darken(#ff0000, 5%);
         }
     }
     .fl-right {
-        float: right;
         #search {
-            display: inline-block;
             height: 80px;
             width: 80px;
-            background: darken(#ff0000, 20%);
             line-height: 80px;
-            float: left;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
-            transition: $global_tran;
-            text-align: center;
             img {
                 width: 24px;
                 height: 24px;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
-                transition: $global_tran;
             }
         }
         #buy-contact {
-            display: inline-block;
             height: 80px;
             width: 150px;
-            background: #fff;
             line-height: 80px;
-            float: left;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
-            transition: $global_tran;
-            text-align: center;
-            a {
-                color: #ff0000;
-                font-weight: bold;
-                display: block;
-            }
-            &:hover {
-                background: darken($flowred, 30%);
-                a {
-                    color: #fff;
-                }
-            }
         }
     }
     nav.desktop {
-        display: inline-block;
-        float: left;
         margin-left: 30px;
-        //background: blue;
         ul.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
             right: 20px;
-            border-color: darken($flowred, 20%) transparent transparent;
         }
         ul.dropdown.menu {
             li {
                 a {
-                    color: #fff;
-                    //height: 80px;
-                    display: inline-block;
                     line-height: 80px;
                     padding: 0 33px 0 20px;
-                    font-weight: bold;
-                    &:hover {
-                        background: #fff;
-                        color: $flowred;
-                    }
                 }
             }
             li.is-dropdown-submenu-parent {
@@ -202,41 +112,17 @@ header {
     }
 }
 
-nav.mobile {
-    width: 100%;
-    background: darken(#ff0000, 20%);
-    display: none;
-    position: fixed;
-    z-index: 0;
-    margin-top: 0;
-}
-
-
 /* =Index
 -------------------------------------------------------------- */
 
 .hero {
-    background: url("../img/hero-test2.jpg");
-    background-size: cover;
-    background-position: center;
     padding-top: 130px;
     padding-bottom: 130px;
     .row {
         .copy {
-            background: rgba(0, 0, 0, .2);
             padding: 15px 30px;
             width: 60%;
-            h1 {
-                color: #fff;
-            }
-            p {
-                color: #fff;
-            }
         }
-    }
-    img {
-        width: 100%;
-        height: auto;
     }
 }
 
@@ -245,9 +131,6 @@ nav.mobile {
 }
 
 .hero.vision {
-    background: url("../img/full-bg.jpg") fixed;
-    background-size: cover;
-    //background-position: center;
     .row {
         .copy {
             margin-left: 40%;
@@ -261,9 +144,7 @@ nav.mobile {
 .industry-home {
     padding: 120px 0;
     h2 {
-        color: #665A50;
         font-size: 34px;
-        text-align: center;
     }
     .column {
         padding-top: 15px;
@@ -281,49 +162,10 @@ nav.mobile {
                 height: 20px;
                 margin-bottom: 20px;
                 margin-top: 10px;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
-                transition: $global_tran;
-            }
-        }
-        &:hover {
-            background: #f4f4f4;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
-            transition: $global_tran;
-            img {
-                opacity: 0.9;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
-                transition: $global_tran;
-            }
-            h5 {
-                //color: #fff;
-            }
-            p {
-                //color: #fff;
-            }
-            img.ic-arr {
-                color: #fff;
-                margin-left: 10px;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
                 transition: $global_tran;
             }
         }
     }
-}
-
-.white {
-    background: $flowgray;
 }
 
 }
