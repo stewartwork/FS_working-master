@@ -22,6 +22,7 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
 .button.no-shad {
     box-shadow: none;
 }
@@ -138,11 +139,23 @@ header {
                     display: inline-block;
                     line-height: 50px;
                     padding: 0 33px 0 20px;
-                    font-size:15px;
+                    font-size: 15px;
                     font-family: HelveticaNeue-Medium;
                     &:hover {
                         background: #fff;
                         color: $flowred;
+                    }
+                }
+                ul.is-dropdown-submenu {
+                    border: none;
+                    li {
+                        a {
+                            color: red;
+                            line-height: 50px;
+                            &:hover {
+                                background: $flowgray;
+                            }
+                        }
                     }
                 }
             }
