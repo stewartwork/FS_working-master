@@ -22,6 +22,7 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
 .button.no-shad {
     box-shadow: none;
 }
@@ -44,10 +45,6 @@ header {
     left: 0;
     z-index: 999;
     background-color: $flowred;
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    -ms-transition: height 0.3s;
-    -o-transition: height 0.3s;
     transition: height 0.3s;
     #logo {
         display: inline-block;
@@ -56,18 +53,10 @@ header {
         line-height: 46px;
         float: left;
         margin-left: 10px;
-        -webkit-transition: $global_tran;
-        -moz-transition: $global_tran;
-        -ms-transition: $global_tran;
-        -o-transition: $global_tran;
         transition: $global_tran;
         img {
             width: 77px;
             height: 50px;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
             transition: $global_tran;
         }
     }
@@ -79,19 +68,11 @@ header {
         line-height: 50px;
         background: darken(#ff0000, 5%);
         text-align: center;
-        -webkit-transition: $global_tran;
-        -moz-transition: $global_tran;
-        -ms-transition: $global_tran;
-        -o-transition: $global_tran;
         transition: $global_tran;
         cursor: pointer;
         img {
             width: 20px;
             height: 20px;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
             transition: $global_tran;
             &:hover {
                 //opacity(0.5);
@@ -110,20 +91,12 @@ header {
             background: darken(#ff0000, 5%);
             line-height: 50px;
             float: left;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
             transition: $global_tran;
             text-align: center;
             cursor: pointer;
             img {
                 width: 16px;
                 height: 16px;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
                 transition: $global_tran;
             }
         }
@@ -134,10 +107,6 @@ header {
             background: #fff;
             line-height: 50px;
             float: left;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
             transition: $global_tran;
             text-align: center;
             a {
@@ -170,10 +139,23 @@ header {
                     display: inline-block;
                     line-height: 50px;
                     padding: 0 33px 0 20px;
-                    font-weight: bold;
+                    font-size: 15px;
+                    font-family: HelveticaNeue-Medium;
                     &:hover {
                         background: #fff;
                         color: $flowred;
+                    }
+                }
+                ul.is-dropdown-submenu {
+                    border: none;
+                    li {
+                        a {
+                            color: red;
+                            line-height: 50px;
+                            &:hover {
+                                background: $flowgray;
+                            }
+                        }
                     }
                 }
             }
@@ -184,7 +166,7 @@ header {
             }
             li:last-child {
                 a {
-                    padding-right: 30px;
+                    padding-right: 20px;
                 }
             }
         }
@@ -321,26 +303,14 @@ nav.mobile {
                 height: 20px;
                 margin-bottom: 20px;
                 margin-top: 10px;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
                 transition: $global_tran;
             }
         }
         &:hover {
             background: #f4f4f4;
-            -webkit-transition: $global_tran;
-            -moz-transition: $global_tran;
-            -ms-transition: $global_tran;
-            -o-transition: $global_tran;
             transition: $global_tran;
             img {
                 opacity: 0.9;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
                 transition: $global_tran;
             }
             h5 {
@@ -352,10 +322,6 @@ nav.mobile {
             img.ic-arr {
                 color: #fff;
                 margin-left: 10px;
-                -webkit-transition: $global_tran;
-                -moz-transition: $global_tran;
-                -ms-transition: $global_tran;
-                -o-transition: $global_tran;
                 transition: $global_tran;
             }
         }
