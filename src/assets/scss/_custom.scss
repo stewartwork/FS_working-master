@@ -138,7 +138,8 @@ header {
                     display: inline-block;
                     line-height: 50px;
                     padding: 0 33px 0 20px;
-                    font-weight: bold;
+                    font-size:15px;
+                    font-family: HelveticaNeue-Medium;
                     &:hover {
                         background: #fff;
                         color: $flowred;
